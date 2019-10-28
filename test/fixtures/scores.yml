@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rule: MyString
+  stage: MyString
+  weapon: MyString
+  power: 1
+  buttle: MyString
+
+two:
+  rule: MyString
+  stage: MyString
+  weapon: MyString
+  power: 1
+  buttle: MyString
