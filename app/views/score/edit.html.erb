@@ -4,7 +4,7 @@
 </div>
 <div class="columns">
   <div class="is-two-thirds">
-    <%= form_tag("/score/create") do %>
+    <%= form_tag("/score/update") do %>
       <div class="section">
         <div class="title is-5">ルール</div>
         <input class="input is-info" type="text" name="rule">
@@ -23,13 +23,13 @@
         <br/><br/>
 
         <div class="title is-5">勝敗</div>
-        <input  class="input is-info" type="input" name="buttle">
+        <input type="input" name="buttle">
         <br/><br/>
 
         <input type="submit" class="button" value="登録">
       </div>
     <% end %>
+    </div>
   </div>
-</div>
 
 

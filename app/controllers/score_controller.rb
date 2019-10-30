@@ -19,4 +19,13 @@ class ScoreController < ApplicationController
       redirect_to("/score/index")
     end
   end
+
+  def edit
+    @score = Score.find_by(id: params[:id])
+  end
+
+  def delete
+    score = Score.find_by(id: params[:id])
+    score.destroy
+  end
 end
