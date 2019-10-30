@@ -11,6 +11,7 @@
       <th>ブキ</th>
       <th>ガチパワー</th>
       <th>勝敗</th>
+      <th></th>
     </tr>
     </thead>
     <tbody>
@@ -21,6 +22,7 @@
       <td><%= score.weapon %></td>
       <td><%= score.power %></td>
       <td><%= score.buttle %></td>
+      <td><%= link_to("編集", "/score/#{score.id}/edit") %></td>
     </tr>
     <% end %>
     </tbody>

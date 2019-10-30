@@ -1,29 +1,29 @@
 <div class="section">
-  <div class="title is-3">成績追加</div>
-  <div class="subtitle is-5">成績を登録できます</div>
+  <div class="title is-3">成績編集</div>
+  <div class="subtitle is-5">成績を編集できます</div>
 </div>
 <div class="columns">
   <div class="is-two-thirds">
-    <%= form_tag("/score/update") do %>
+    <%= form_tag("/score/#{@score.id}/update") do %>
       <div class="section">
         <div class="title is-5">ルール</div>
-        <input class="input is-info" type="text" name="rule">
+        <input class="input is-info" type="text" name="rule" value=<%= @score.rule %>>
         <br/><br/>
 
         <div class="title is-5">ステージ</div>
-        <input class="input is-info" type="text" name="stage">
+        <input class="input is-info" type="text" name="stage" value=<%= @score.stage %>>
         <br/><br/>
 
         <div class="title is-5">ブキ</div>
-        <input class="input is-info" type="text" name="weapon">
+        <input class="input is-info" type="text" name="weapon" value=<%= @score.weapon %>>
         <br/><br/>
 
         <div class="title is-5">ガチパワー</div>
-        <input class="input  is-info" type="text" name="power">
+        <input class="input  is-info" type="text" name="power" value=<%= @score.power %>>
         <br/><br/>
 
         <div class="title is-5">勝敗</div>
-        <input type="input" name="buttle">
+        <input class="input  is-info" type="text" name="buttle" value=<%= @score.buttle %>>
         <br/><br/>
 
         <input type="submit" class="button" value="登録">
