@@ -14,13 +14,15 @@
     </tr>
     </thead>
     <tbody>
+    <% @score.each do |score| %>
     <tr>
-      <td>ガチヤグラ</td>
-      <td>海女美術大学</td>
-      <td>スクリュースロッシャー</td>
-      <td>1900</td>
-      <td>勝ち</td>
+      <td><%= score.rule %></td>
+      <td><%= score.stage %></td>
+      <td><%= score.weapon %></td>
+      <td><%= score.power %></td>
+      <td><%= score.buttle %></td>
     </tr>
+    <% end %>
     </tbody>
   </table>
 </div>
